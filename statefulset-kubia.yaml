@@ -18,7 +18,7 @@ spec:
           containerPort: 8080
         volumeMounts:
         - name: data 
-        mountPath: /var/data 
+        mountPath: /tmp/data 
    volumeClaimTemplates:
    - metadata:
        name: data 
