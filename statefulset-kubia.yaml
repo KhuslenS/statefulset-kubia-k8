@@ -18,13 +18,13 @@ spec:
           containerPort: 8080
         volumeMounts:
         - name: data 
-          mountPath: /mnt/data 
-   volumeClaimTemplates:
-   - metadata:
-       name: data 
-     spec: 
-       resources:
-         requests:
-           storage: 1Mi
-       accessModes:
-       - ReadWriteOnce 
+          mountPath: /var/data 
+  volumeClaimTemplates:
+  - metadata:
+      name: data 
+    spec: 
+      resources:
+        requests:
+         storage: 1Mi
+      accessModes:
+      - ReadWriteOnce 
