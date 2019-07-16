@@ -1,0 +1,1 @@
+# statefulset-kubia-k8
