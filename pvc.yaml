@@ -10,13 +10,13 @@ items:
       storage: 1Mi
     accessModes:
       - ReadWriteOnce
-    PersistentVolumeReclaimPolicy: Recycle
+    persistentVolumeReclaimPolicy: Recycle
     gcePersistentDisk:
-      pdNamee: pv-a
+      pdName: pv-a
       fsType: nfs4
 
 - apiVersion: v1
-  kind: PersistentVolumeClaim
+  kind: PersistentVolume
   metadata:
     name: pv-b
   spec:
@@ -24,13 +24,13 @@ items:
       storage: 1Mi
     accessModes:
       - ReadWriteOnce
-    PersistentVolumeReclaimPolicy: Recycle
+    persistentVolumeReclaimPolicy: Recycle
     gcePersistentDisk:
-      pdNamee: pv-b
+      pdName: pv-b
       fsType: nfs4
       
 - apiVersion: v1
-  kind: PersistentVolumeClaim
+  kind: PersistentVolume
   metadata:
     name: pv-c
   spec:
@@ -38,7 +38,7 @@ items:
       storage: 1Mi
     accessModes:
       - ReadWriteOnce
-    PersistentVolumeReclaimPolicy: Recycle
+    persistentVolumeReclaimPolicy: Recycle
     gcePersistentDisk:
-      pdNamee: pv-c
+      pdName: pv-c
       fsType: nfs4
