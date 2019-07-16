@@ -11,9 +11,9 @@ items:
     accessModes:
       - ReadWriteOnce
     persistentVolumeReclaimPolicy: Recycle
-    gcePersistentDisk:
-      # pdName: pv-a
-      fsType: nfs4
+    # gcePersistentDisk:
+    #   # pdName: pv-a
+    #   fsType: nfs4
 
 - apiVersion: v1
   kind: PersistentVolume
@@ -25,9 +25,9 @@ items:
     accessModes:
       - ReadWriteOnce
     persistentVolumeReclaimPolicy: Recycle
-    gcePersistentDisk:
-      # pdName: pv-b
-      fsType: nfs4
+    # gcePersistentDisk:
+    #   # pdName: pv-b
+    #   fsType: nfs4
       
 - apiVersion: v1
   kind: PersistentVolume
@@ -39,6 +39,6 @@ items:
     accessModes:
       - ReadWriteOnce
     persistentVolumeReclaimPolicy: Recycle
-    gcePersistentDisk:
-      # pdName: pv-c
-      fsType: nfs4
+    # gcePersistentDisk:
+    #   # pdName: pv-c
+    #   fsType: nfs4
