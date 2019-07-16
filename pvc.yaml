@@ -12,7 +12,7 @@ items:
       - ReadWriteOnce
     persistentVolumeReclaimPolicy: Recycle
     gcePersistentDisk:
-      pdName: pv-a
+      # pdName: pv-a
       fsType: nfs4
 
 - apiVersion: v1
@@ -26,7 +26,7 @@ items:
       - ReadWriteOnce
     persistentVolumeReclaimPolicy: Recycle
     gcePersistentDisk:
-      pdName: pv-b
+      # pdName: pv-b
       fsType: nfs4
       
 - apiVersion: v1
@@ -40,5 +40,5 @@ items:
       - ReadWriteOnce
     persistentVolumeReclaimPolicy: Recycle
     gcePersistentDisk:
-      pdName: pv-c
+      # pdName: pv-c
       fsType: nfs4
